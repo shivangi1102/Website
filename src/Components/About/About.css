@@ -1,0 +1,133 @@
+.about{
+   display: flex;
+   height: 77vh;
+   margin-top: 6rem; 
+}
+
+.a-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a-name{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.a-name>:nth-child(1){
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.a-name>:nth-child(2){
+    color: var(--purpleg);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.a-name>:nth-child(3){
+    color: var(--gray);
+    font-size: 17px;
+    font-weight: 150;
+    margin-top: 10px;
+}
+
+
+.a-icons{
+    margin-top:3rem ;
+    gap:0rem;
+    display: flex;
+}
+
+.a-icons>*{
+transform: scale(0.5);
+}
+
+.a-icons>*:hover{
+    cursor: pointer;
+}
+
+.a-ic{
+    filter: invert(42%) sepia(22%) saturate(1177%) hue-rotate(235deg) brightness(96%) contrast(82%);;
+}
+
+.a-button{
+    width: 10rem;
+    height: 2rem;
+}
+.a-right{
+    flex: 1;
+    position: relative;
+}
+.a-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.a-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+
+.a-right>:nth-child(2){
+    transform: scale(0.67);
+    left: -3rem;
+    top: -4.6rem;
+}
+.a-right>:nth-child(3){
+    transform: scale(1.4);
+    left: 28%;
+    
+}
+.a-right>:nth-child(4){
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+  }
+
+  @media screen and (max-width: 480px) {
+    .about {
+      flex-direction: column;
+      gap: 4rem;
+      height: 50rem;
+    }
+
+    .a-icons{
+        margin-top:-1rem ;
+        gap:0rem;
+        transform: scale(0.7);
+        justify-content: left;
+    }
+  
+    .a-right {
+      transform: scale(0.62);
+      left: -3rem;
+    }
+    .a-right .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+  }

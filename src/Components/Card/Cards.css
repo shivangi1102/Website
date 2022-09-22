@@ -1,0 +1,35 @@
+.cards{
+    width: 25px;
+    height: 16rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    width: 10rem;
+    text-align: center;
+    background: rgb(255, 255, 255,0.26);
+    border: 7px solid var(--purpleCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+}
+
+.cards>img{
+    transform: scale(0.6);
+    margin-bottom: -2rem;
+}
+
+.cards>ul{
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+.cards>span{
+    font-size: 1.2rem;
+}
+.c-li{
+    color: var(--gray);
+}
+

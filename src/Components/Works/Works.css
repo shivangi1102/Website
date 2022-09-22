@@ -1,0 +1,163 @@
+.works{
+    padding: 0rem 3rem 0rem 3rem;
+    height: 90vh;
+    margin-top: 12rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.w-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.w-left>:nth-child(1){
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.w-left>:nth-child(2) {
+    color: var(--purpleg);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .w-left>:nth-child(3){
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+
+  .w-left>:nth-child(4) {
+    color: #D3D3D3;
+    font-size: 16px;
+    
+  }
+.w-left>ul {
+    color: var(--gray);
+    margin-top: 1rem;
+    list-style-type: '✓  ';
+  }
+ 
+  
+.w-ul>*{
+    font-size: 16px;
+    gap: 0.5rem;
+}
+.w-button{
+    width: 10rem;
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+.w-right{
+    position: relative;
+}
+
+.w-main{
+    position:relative;
+    left: 9rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    background: white;
+    top: 2rem;
+}
+
+.w-main>*{
+    position:absolute;
+}
+
+.w-main> :nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+
+.w-main> :nth-child(2){
+    top: 7rem;
+    left: -3rem;
+}
+
+.w-main> :nth-child(3){
+    top: 7rem;
+    left: 15rem;
+}
+
+.w-main> :nth-child(4){
+    top: 6rem;
+    left: 6.5rem;
+}
+
+.w-secondary{
+    border-radius: 100%;
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border: 5px solid #ebebeb;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--smboxShadow);
+    background: white;
+
+}
+
+.w-secondary>img{
+    transform: scale(0.6);
+}
+
+.w-backcircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+
+}
+
+.blue{
+    background: blue;
+    left: 18rem;
+    top: 0rem;
+}
+
+.yellow{
+    background: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .works {
+      flex-direction: column;
+      height: 55rem;
+      padding: 0;
+      gap: 4rem;
+    }
+    .w-left>:nth-child(1){
+        font-size: 2rem;
+    }
+    
+    .w-left>:nth-child(2) {
+        font-size: 3rem;
+      }
+    .w-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content:start;
+      transform: scale(0.7);
+    }
+    .w-main{
+      position: static;
+    }
+    .w-backcircle{
+      left: 8rem!important;
+    }
+  
+  }
